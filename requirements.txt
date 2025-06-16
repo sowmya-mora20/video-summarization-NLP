@@ -1,0 +1,4 @@
+Flask
+youtube-transcript-api
+summa
+googletrans==4.0.0-rc1

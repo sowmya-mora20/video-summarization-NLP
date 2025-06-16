@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Transcript Summarizer</title>
+
+  <!-- Font Awesome CDN for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Doll Animation */
+    @keyframes popIn {
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    #clapDollContainer {
+      display: none;
+      text-align: center;
+      margin-top: 1.5rem;
+      animation: popIn 0.6s ease-out;
+    }
+
+    #clapDollContainer img {
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-video"></i> YouTube Transcript Summarizer</h1>
+
+    <form id="summaryForm">
+      <label for="url" class="icon-label">
+        <i class="fas fa-link"></i> YouTube URL:
+      </label>
+      <input
+        type="text"
+        id="url"
+        name="url"
+        placeholder="https://www.youtube.com/watch?v=..."
+        required
+      />
+
+      <label for="lang" class="icon-label">
+        <i class="fas fa-language"></i> Language (e.g., en, ta, fr):
+      </label>
+      <input type="text" id="lang" name="lang" placeholder="en" />
+
+      <label for="length" class="icon-label">
+        <i class="fas fa-compress-arrows-alt"></i> Summary Length:
+      </label>
+      <select id="length" name="length">
+        <option value="small">Small</option>
+        <option value="medium" selected>Medium</option>
+        <option value="large">Large</option>
+      </select>
+
+      <button type="submit">
+        <i class="fas fa-paper-plane"></i> Get Summary
+      </button>
+    </form>
+
+    <h2><i class="fas fa-file-alt"></i> Summary Output:</h2>
+    <pre id="output">Your summary will appear here...</pre>
+
+    <!-- Clapping Doll -->
+    <div id="clapDollContainer">
+      <img
+        src="https://media.giphy.com/media/111ebonMs90YLu/giphy.gif"
+        alt="Clapping Doll"
+      />
+    </div>
+  </div>
+
+  <!-- Link to external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
