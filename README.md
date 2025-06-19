@@ -46,14 +46,7 @@ Customizable: Language & summary length
 
 Fast and efficient
 
-👩‍💻 Team Members
-Mora Sowmya (2456-21-737-108)
 
-Dharmavarapu Lakshmi Jhansi Rani (2456-21-737-086)
-
-Bharatha Bhargavi (2456-21-737-071)
-
-Guide: Mr. M. Bapiraju, Assistant Professor
 
 📜 Future Enhancements
 Support for summarizing video audio directly
