@@ -9,10 +9,10 @@ To build a system that extracts transcripts from YouTube videos and provides con
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python, Flask
 - **Libraries**: 
-  - youtube-transcript-api
-  - Hugging Face transformers
-  - summa for text summarization
-  - googletrans for language translation
+  - `youtube-transcript-api`
+  - Hugging Face `transformers`
+  - `summa` for text summarization
+  - `googletrans` for language translation
 - **Framework**: Streamlit for web UI
 
 ## ⚙️ How It Works
@@ -23,7 +23,7 @@ To build a system that extracts transcripts from YouTube videos and provides con
 5. Output is displayed on the web UI.
 
 ## 🚀 How to Run
-bash
+```bash
 pip install -r requirements.txt
 python app.py
 Visit http://localhost:5000 in your browser and try it out!
@@ -46,6 +46,14 @@ Customizable: Language & summary length
 
 Fast and efficient
 
+👩‍💻 Team Members
+Mora Sowmya (2456-21-737-108)
+
+Dharmavarapu Lakshmi Jhansi Rani (2456-21-737-086)
+
+Bharatha Bhargavi (2456-21-737-071)
+
+Guide: Mr. M. Bapiraju, Assistant Professor
 
 📜 Future Enhancements
 Support for summarizing video audio directly
@@ -53,5 +61,7 @@ Support for summarizing video audio directly
 Real-time summarization for live content
 
 Chrome extension for quick summaries
+
+
 
 
